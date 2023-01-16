@@ -1,0 +1,86 @@
+/**
+ * Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+ * All Rights Reserved.
+ * Unauthorized copying of this file, via any medium is strictly
+ * prohibited proprietary and confidential.
+ */
+.main-theme {
+  background-color: #3831a0;
+  color: white; }
+  .main-theme * {
+    overflow-x: hidden; }
+  .main-theme .card#leading {
+    background-image: linear-gradient(#3831a0, white); }
+  .main-theme .vh {
+    min-height: 100vh; }
+  .main-theme .mw,
+  .main-theme .mw-2 {
+    width: 100vw;
+    max-width: 900px;
+    margin: 0 auto; }
+    @media (max-width: 320px) {
+      .main-theme .mw,
+      .main-theme .mw-2 {
+        width: 320px; } }
+    @media (max-width: 450px) {
+      .main-theme .mw,
+      .main-theme .mw-2 {
+        width: 320px; } }
+    @media (max-width: 576px) {
+      .main-theme .mw,
+      .main-theme .mw-2 {
+        width: 450px; } }
+    @media (max-width: 1380px) {
+      .main-theme .mw,
+      .main-theme .mw-2 {
+        width: 450px; } }
+  .main-theme .triangle-shape {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 0;
+    width: 0;
+    opacity: 0.6;
+    border-left: 100vw solid transparent;
+    border-right: 100vw solid transparent;
+    border-bottom: 100vw solid transparent;
+    border-bottom-color: red; }
+  .main-theme .mw-2 {
+    max-width: 950px; }
+
+.main-theme header #avatar {
+  width: 140px; }
+  @media (max-width: 576px) {
+    .main-theme header #avatar {
+      width: 100px; } }
+.main-theme header .card#leading.mw-2 {
+  border: none;
+  max-width: unset; }
+  @media (min-width: 600px) {
+    .main-theme header .card#leading.mw-2 {
+      margin: 0 0 0 calc(100vw / 3);
+      max-width: unset;
+      width: unset; }
+      .main-theme header .card#leading.mw-2 #avatar {
+        width: 200px; } }
+.main-theme .triangle-shape#t1 {
+  top: unset;
+  bottom: 0;
+  position: relative;
+  left: -20%; }
+.main-theme .triangle-shape#t2 {
+  bottom: 0;
+  position: relative;
+  left: 0%;
+  transform: rotateX(140deg);
+  border-bottom-color: #eba1a1; }
+  @media (min-width: 900px) {
+    .main-theme .triangle-shape#t2 {
+      top: -100vh;
+      transform: none; } }
+.main-theme footer {
+  min-height: 200px;
+  width: 100vw;
+  background-color: black; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,54 @@
+// Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+// All Rights Reserved.
+// Unauthorized copying of this file, via any medium is strictly
+// prohibited proprietary and confidential.
+@import "./style.scss";
+.main-theme {
+    header {
+        #avatar {
+            width: 140px;
+            @media (max-width: 576px) {
+                width: 100px;
+            }
+        }
+
+        .card#leading.mw-2 {
+            border: none;
+            max-width: unset;
+            @media (min-width: 600px) {
+                margin: 0 0 0 calc(100vw / 3);
+                max-width: unset;
+                width: unset;
+
+                #avatar {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .triangle-shape#t1 {
+        top: unset;
+        bottom: 0;
+        position: relative;
+        left: -20%;
+    }
+    .triangle-shape#t2 {
+        $color: rgb(235, 161, 161);
+        bottom: 0;
+        position: relative;
+        left: 0%;
+        transform: rotateX(140deg);
+        border-bottom-color: $color;
+        @media (min-width: 900px) {
+            top: -100vh;
+            transform: none;
+        }
+    }
+
+    footer {
+        min-height: 200px;
+        width: 100vw;
+        background-color: black;
+    }
+}
