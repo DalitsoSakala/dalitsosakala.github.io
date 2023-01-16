@@ -1,0 +1,21 @@
+/**
+ * Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+ * All Rights Reserved.
+ * Unauthorized copying of this file, via any medium is strictly
+ * prohibited proprietary and confidential.
+ */
+.main-theme {
+  background-color: #200b0b;
+  color: white; }
+  .main-theme .card {
+    background-image: linear-gradient(#200b0b, #c96161); }
+
+.mw,
+.mw-2 {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.mw-2 {
+  max-width: 950px; }
+
+/*# sourceMappingURL=style.css.map */
