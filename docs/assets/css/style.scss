@@ -20,7 +20,7 @@ $breakpoint-width: (
     background-color: $bg;
     color: white;
 
-    .card {
+    .card#leading {
         background-image: linear-gradient($bg, lighten($color: $bg, $amount: 60));
     }
 
