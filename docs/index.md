@@ -8,9 +8,8 @@
 <img src="assets/img/avatar.png" width="90" height="90" >
 
 ## ABOUT
-> *Software developer* / *Microbiologist*
-I AM AVAILABLE FOR:
-----
+> **Software developer** / **Microbiologist**
+
 - [x] Full stack web development
 - [x] Mobile and Desktop application development
 - [x] Open to remote work and collaboration
