@@ -5,11 +5,13 @@
  prohibited proprietary and confidential.
 -->
 # Dalitso Sakala
-<img src="assets/img/avatar.png" width="70" height="70" >
+<img src="assets/img/avatar.png" width="90" height="90" >
 
 ## ABOUT
-> Software developer/Microbiology
-- [x] Full stack developer
-- [x] Mobile app developer
+> *Software developer* / *Microbiologist*
+I AM AVAILABLE FOR:
+----
+- [x] Full stack web development
+- [x] Mobile and Desktop application development
 - [x] Open to remote work and collaboration
 
