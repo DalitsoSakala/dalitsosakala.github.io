@@ -5,5 +5,11 @@
  prohibited proprietary and confidential.
 -->
 # Dalitso Sakala
-<img src="https://pbs.twimg.com/profile_images/1506824902992617479/boI5kcdN_400x400.jpg" width="50" height="50" >
-> Software Developer/Microbiologist
+<img src="assets/img/avatar.png" width="70" height="70" >
+
+## ABOUT
+> Software developer/Microbiology
+- [x] Full stack developer
+- [x] Mobile app developer
+- [x] Open to remote work and collaboration
+
