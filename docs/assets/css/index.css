@@ -1,86 +1,74 @@
-/**
- * Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
- * All Rights Reserved.
- * Unauthorized copying of this file, via any medium is strictly
- * prohibited proprietary and confidential.
- */
-.main-theme {
-  background-color: #3831a0;
-  color: white; }
-  .main-theme * {
-    overflow-x: hidden; }
-  .main-theme .card#leading {
-    background-image: linear-gradient(#3831a0, white); }
-  .main-theme .vh {
-    min-height: 100vh; }
-  .main-theme .mw,
-  .main-theme .mw-2 {
-    width: 100vw;
-    max-width: 900px;
-    margin: 0 auto; }
-    @media (max-width: 320px) {
-      .main-theme .mw,
-      .main-theme .mw-2 {
-        width: 320px; } }
-    @media (max-width: 450px) {
-      .main-theme .mw,
-      .main-theme .mw-2 {
-        width: 320px; } }
-    @media (max-width: 576px) {
-      .main-theme .mw,
-      .main-theme .mw-2 {
-        width: 450px; } }
-    @media (max-width: 1380px) {
-      .main-theme .mw,
-      .main-theme .mw-2 {
-        width: 450px; } }
-  .main-theme .triangle-shape {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: 0;
-    width: 0;
-    opacity: 0.6;
-    border-left: 100vw solid transparent;
-    border-right: 100vw solid transparent;
-    border-bottom: 100vw solid transparent;
-    border-bottom-color: red; }
-  .main-theme .mw-2 {
-    max-width: 950px; }
+:root {
+  --bs-primary-rgb: 223, 212, 97;
+  --bs-secondary-rgb: 97, 152, 223;
+  --bs-primary: #dfd461;
+  --bs-secondary: #6198df; }
 
-.main-theme header #avatar {
-  width: 140px; }
-  @media (max-width: 576px) {
-    .main-theme header #avatar {
-      width: 100px; } }
-.main-theme header .card#leading.mw-2 {
-  border: none;
-  max-width: unset; }
-  @media (min-width: 600px) {
-    .main-theme header .card#leading.mw-2 {
-      margin: 0 0 0 calc(100vw / 3);
-      max-width: unset;
-      width: unset; }
-      .main-theme header .card#leading.mw-2 #avatar {
-        width: 200px; } }
-.main-theme .triangle-shape#t1 {
-  top: unset;
-  bottom: 0;
+a.navbar-brand {
+  width: 70px;
+  height: 70px;
+  display: inline-block; }
+
+header div#avatar-wrapper {
+  width: 15rem !important;
+  height: 15rem !important;
   position: relative;
-  left: -20%; }
-.main-theme .triangle-shape#t2 {
-  bottom: 0;
+  z-index: 1; }
+  header div#avatar-wrapper > img {
+    outline: 0.2rem solid rgba(var(--bs-primary-rgb));
+    border-radius: 15rem; }
+  header div#avatar-wrapper > div {
+    z-index: -1;
+    position: relative;
+    top: -100%;
+    width: 50%;
+    background-color: white;
+    height: 100%; }
+header div#underlines > div {
   position: relative;
-  left: 0%;
-  transform: rotateX(140deg);
-  border-bottom-color: #eba1a1; }
-  @media (min-width: 900px) {
-    .main-theme .triangle-shape#t2 {
-      top: -100vh;
-      transform: none; } }
-.main-theme footer {
-  min-height: 200px;
-  width: 100vw;
-  background-color: black; }
+  border-bottom: 0.4rem solid rgba(var(--bs-primary-rgb)); }
+  @media (min-width: 992px) {
+    header div#underlines > div {
+      margin-left: -15rem;
+      padding-left: 15rem; }
+      header div#underlines > div:nth-child(1) {
+        width: 40%; }
+      header div#underlines > div:nth-child(2) {
+        width: 70%; }
+      header div#underlines > div:last-child {
+        width: 100%; }
+        header div#underlines > div:last-child p {
+          width: inherit;
+          white-space: nowrap;
+          height: 2rem; } }
+  header div#underlines > div p {
+    font-size: 1.2rem;
+    margin: 1rem 0 0; }
+    header div#underlines > div p:not(#links p) .bi {
+      color: var(--bs-secondary); }
+header div#underlines > #links p {
+  border-radius: .4rem;
+  border: 0.12rem solid #e0d699;
+  margin-left: .3rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: .4rem; }
+  @media (max-width: 992px) {
+    header div#underlines > #links p {
+      margin: 1rem auto; } }
+  header div#underlines > #links p a {
+    text-align: center;
+    display: inline-block; }
+    header div#underlines > #links p a:hover {
+      border: 1px solid blue; }
+      header div#underlines > #links p a:hover .bi {
+        color: var(--bs-secondary); }
+    header div#underlines > #links p a .bi {
+      font-size: 1.7rem;
+      display: inline-block;
+      color: rgba(var(--bs-primary-rgb)); }
 
 /*# sourceMappingURL=index.css.map */

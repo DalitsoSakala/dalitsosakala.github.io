@@ -1,54 +1,111 @@
-// Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+// Copyright (C) Dalitso Sakala <cdalitso.1sc@gmail.com>
 // All Rights Reserved.
 // Unauthorized copying of this file, via any medium is strictly
 // prohibited proprietary and confidential.
 @import "./style.scss";
-.main-theme {
-    header {
-        #avatar {
-            width: 140px;
-            @media (max-width: 576px) {
-                width: 100px;
-            }
+
+header {
+    $avatar-width: 15rem;
+
+    div#avatar-wrapper {
+        width: $avatar-width !important;
+        height: $avatar-width !important;
+        position: relative;
+        z-index: 1;
+
+        >img {
+            outline: .2rem solid rgba(var(--bs-primary-rgb));
+            border-radius: $avatar-width;
         }
 
-        .card#leading.mw-2 {
-            border: none;
-            max-width: unset;
-            @media (min-width: 600px) {
-                margin: 0 0 0 calc(100vw / 3);
-                max-width: unset;
-                width: unset;
+        >div {
+            z-index: -1;
+            position: relative;
+            top: -100%;
+            width: 50%;
+            background-color: white;
+            height: 100%;
+        }
+    }
 
-                #avatar {
-                    width: 200px;
+    div#underlines {
+        >div {
+            position: relative;
+            border-bottom: .4rem solid rgba(var(--bs-primary-rgb));
+
+
+            @media (min-width: 992px) {
+                margin-left: -$avatar-width;
+                padding-left: $avatar-width;
+
+                &:nth-child(1) {
+                    width: 40%;
+                }
+
+                &:nth-child(2) {
+                    width: 70%;
+                }
+
+                &:last-child {
+                    width: 100%;
+
+                    p {
+                        width: inherit;
+                        white-space: nowrap;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 1rem 0 0;
+
+                &:not(#links p) {
+
+                    .bi {
+                        color: var(--bs-secondary);
+                    }
                 }
             }
         }
-    }
 
-    .triangle-shape#t1 {
-        top: unset;
-        bottom: 0;
-        position: relative;
-        left: -20%;
-    }
-    .triangle-shape#t2 {
-        $color: rgb(235, 161, 161);
-        bottom: 0;
-        position: relative;
-        left: 0%;
-        transform: rotateX(140deg);
-        border-bottom-color: $color;
-        @media (min-width: 900px) {
-            top: -100vh;
-            transform: none;
+        >#links {
+            p {
+                border-radius: .4rem;
+                border: .12rem solid rgb(224, 214, 153);
+                margin-left: .3rem;
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: space-between;
+                padding: 0;
+
+                @media (max-width: 992px) {
+                    margin: 1rem auto;
+                }
+
+                margin-bottom: .4rem;
+
+                a {
+                    text-align: center;
+                    display: inline-block;
+
+                    &:hover {
+                        border: 1px solid blue;
+
+                        .bi {
+                            color: var(--bs-secondary);
+                        }
+                    }
+
+                    .bi {
+                        font-size: 1.7rem;
+                        display: inline-block;
+                        color: rgba(var(--bs-primary-rgb));
+                    }
+                }
+            }
         }
-    }
-
-    footer {
-        min-height: 200px;
-        width: 100vw;
-        background-color: black;
     }
 }

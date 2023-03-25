@@ -1,59 +1,12 @@
-/**
- * Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
- * All Rights Reserved.
- * Unauthorized copying of this file, via any medium is strictly
- * prohibited proprietary and confidential.
- */
-$bg: rgb(56, 49, 160);
-$max-width: 900px;
-$breakpoint-width: (
-    320px: 320px,
-    450px: 320px,
-    576px: 450px,
-    1380px: 450px,
-);
+:root{
+    --bs-primary-rgb: 223, 212, 97;
+    --bs-secondary-rgb: 97, 152, 223;
+    --bs-primary: #dfd461;
+    --bs-secondary: #6198df;
+}
 
-.main-theme {
-    * {
-        overflow-x: hidden;
-    }
-    background-color: $bg;
-    color: white;
-
-    .card#leading {
-        background-image: linear-gradient($bg, lighten($color: $bg, $amount: 60));
-    }
-
-    .vh {
-        min-height: 100vh;
-    }
-    .mw,
-    .mw-2 {
-        width: 100vw;
-        max-width: $max-width;
-        @each $key, $size in $breakpoint-width {
-            @media (max-width: $key) {
-                width: $size;
-            }
-        }
-        margin: 0 auto;
-    }
-
-    .triangle-shape {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        height: 0;
-        width: 0;
-        opacity: 0.6;
-        $border: 100vw solid transparent;
-        border-left: $border;
-        border-right: $border;
-        border-bottom: $border;
-        border-bottom-color: red;
-    }
-
-    .mw-2 {
-        max-width: 950px;
-    }
+a.navbar-brand{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
 }
