@@ -46,7 +46,11 @@ header div#avatar-wrapper {
   z-index: 1; }
   header div#avatar-wrapper > img {
     outline: 0.2rem solid rgba(var(--bs-primary-rgb));
-    border-radius: 15rem; }
+    border-radius: 15rem;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    background-color: var(--bs-primary); }
   header div#avatar-wrapper > div {
     z-index: -1;
     position: relative;

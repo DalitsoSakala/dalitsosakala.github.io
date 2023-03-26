@@ -12,10 +12,17 @@ header {
         height: $avatar-width !important;
         position: relative;
         z-index: 1;
+        // background-color: var(--bs-primary);
+        
 
         >img {
             outline: .2rem solid rgba(var(--bs-primary-rgb));
             border-radius: $avatar-width;
+            width: $avatar-width;
+            height: $avatar-width;
+            display: inline-block; 
+            background-color: var(--bs-primary);
+
         }
 
         >div {
@@ -32,14 +39,17 @@ header {
         $animation-duration: .5s;
         animation-name: u;
         animation-duration: $animation-duration;
+
         @keyframes u {
-            from{
+            from {
                 opacity: 0;
             }
-            to{
+
+            to {
                 opacity: 1;
             }
         }
+
         >div {
             overflow: hidden;
             position: relative;
@@ -54,11 +64,13 @@ header {
                     width: 40%;
                     animation-name: n1;
                     animation-duration: $animation-duration;
+
                     @keyframes n1 {
-                        from{
-                            width:0;
+                        from {
+                            width: 0;
                         }
-                        to{
+
+                        to {
                             width: 40%;
                         }
                     }
@@ -68,11 +80,13 @@ header {
                     width: 70%;
                     animation-name: n2;
                     animation-duration: $animation-duration;
+
                     @keyframes n2 {
-                        from{
-                            width:0;
+                        from {
+                            width: 0;
                         }
-                        to{
+
+                        to {
                             width: 70%;
                         }
                     }
@@ -82,11 +96,13 @@ header {
                     width: 100%;
                     animation-name: n3;
                     animation-duration: $animation-duration;
+
                     @keyframes n3 {
-                        from{
-                            width:0;
+                        from {
+                            width: 0;
                         }
-                        to{
+
+                        to {
                             width: 100%;
                         }
                     }
@@ -126,12 +142,14 @@ header {
 
                 animation-name: lnks;
                 animation-duration: .6s;
-                left:0;
-                @keyframes lnks{
-                    from{
+                left: 0;
+
+                @keyframes lnks {
+                    from {
                         left: -100vw;
                     }
-                    to{
+
+                    to {
                         left: 0;
                     }
                 }
