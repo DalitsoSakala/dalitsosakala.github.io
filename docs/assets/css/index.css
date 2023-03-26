@@ -50,7 +50,7 @@ header div#avatar-wrapper {
     width: 15rem;
     height: 15rem;
     display: inline-block;
-    background-color: var(--bs-primary); }
+    background-color: white; }
   header div#avatar-wrapper > div {
     z-index: -1;
     position: relative;
