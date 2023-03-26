@@ -9,6 +9,36 @@ a.navbar-brand {
   height: 70px;
   display: inline-block; }
 
+.badge > a {
+  text-decoration: none !important; }
+
+.card hr {
+  color: var(--bs-primary);
+  max-width: 190px;
+  height: .3rem; }
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh; }
+  body footer {
+    text-align: center;
+    padding: 3rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body footer span.line {
+      display: inline-block;
+      border: 1px solid var(--bs-primary);
+      margin-bottom: .7rem; }
+      body footer span.line:first-child {
+        width: 50%; }
+      body footer span.line:nth-child(2) {
+        width: 20%; }
+
 header div#avatar-wrapper {
   width: 15rem !important;
   height: 15rem !important;
@@ -24,51 +54,90 @@ header div#avatar-wrapper {
     width: 50%;
     background-color: white;
     height: 100%; }
-header div#underlines > div {
-  position: relative;
-  border-bottom: 0.4rem solid rgba(var(--bs-primary-rgb)); }
-  @media (min-width: 992px) {
-    header div#underlines > div {
-      margin-left: -15rem;
-      padding-left: 15rem; }
-      header div#underlines > div:nth-child(1) {
-        width: 40%; }
-      header div#underlines > div:nth-child(2) {
-        width: 70%; }
-      header div#underlines > div:last-child {
-        width: 100%; }
-        header div#underlines > div:last-child p {
-          width: inherit;
-          white-space: nowrap;
-          height: 2rem; } }
-  header div#underlines > div p {
-    font-size: 1.2rem;
-    margin: 1rem 0 0; }
-    header div#underlines > div p:not(#links p) .bi {
-      color: var(--bs-secondary); }
-header div#underlines > #links p {
-  border-radius: .4rem;
-  border: 0.12rem solid #e0d699;
-  margin-left: .3rem;
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
-  justify-content: space-between;
-  padding: 0;
-  margin-bottom: .4rem; }
-  @media (max-width: 992px) {
-    header div#underlines > #links p {
-      margin: 1rem auto; } }
-  header div#underlines > #links p a {
-    text-align: center;
-    display: inline-block; }
-    header div#underlines > #links p a:hover {
-      border: 1px solid blue; }
-      header div#underlines > #links p a:hover .bi {
+header div#underlines {
+  animation-name: u;
+  animation-duration: 0.5s; }
+@keyframes u {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  header div#underlines > div {
+    overflow: hidden;
+    position: relative;
+    border-bottom: 0.4rem solid rgba(var(--bs-primary-rgb)); }
+    @media (min-width: 992px) {
+      header div#underlines > div {
+        margin-left: -15rem;
+        padding-left: 15rem; }
+        header div#underlines > div:nth-child(1) {
+          width: 40%;
+          animation-name: n1;
+          animation-duration: 0.5s; }
+      @keyframes n1 {
+        from {
+          width: 0; }
+        to {
+          width: 40%; } }
+        header div#underlines > div:nth-child(2) {
+          width: 70%;
+          animation-name: n2;
+          animation-duration: 0.5s; }
+      @keyframes n2 {
+        from {
+          width: 0; }
+        to {
+          width: 70%; } }
+        header div#underlines > div:last-child {
+          width: 100%;
+          animation-name: n3;
+          animation-duration: 0.5s; }
+      @keyframes n3 {
+        from {
+          width: 0; }
+        to {
+          width: 100%; } }
+          header div#underlines > div:last-child p {
+            width: inherit;
+            white-space: nowrap;
+            height: 2rem; } }
+    header div#underlines > div p {
+      font-size: 1.2rem;
+      margin: 1rem 0 0; }
+      header div#underlines > div p:not(#links p) .bi {
         color: var(--bs-secondary); }
-    header div#underlines > #links p a .bi {
-      font-size: 1.7rem;
-      display: inline-block;
-      color: rgba(var(--bs-primary-rgb)); }
+  header div#underlines > #links p {
+    border-radius: .4rem;
+    border: 0.12rem solid #e0d699;
+    margin-left: .3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    animation-name: lnks;
+    animation-duration: .6s;
+    left: 0;
+    margin-bottom: .4rem; }
+@keyframes lnks {
+  from {
+    left: -100vw; }
+  to {
+    left: 0; } }
+    @media (max-width: 992px) {
+      header div#underlines > #links p {
+        margin: 1rem auto; } }
+    header div#underlines > #links p a {
+      text-align: center;
+      display: inline-block; }
+      header div#underlines > #links p a:hover {
+        border: 1px solid blue; }
+        header div#underlines > #links p a:hover .bi {
+          color: var(--bs-secondary); }
+      header div#underlines > #links p a .bi {
+        font-size: 1.7rem;
+        display: inline-block;
+        color: rgba(var(--bs-primary-rgb)); }
 
 /*# sourceMappingURL=index.css.map */
